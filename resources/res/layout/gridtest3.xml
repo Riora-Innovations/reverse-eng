@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p003v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/Grid1" android:layout_width="match_parent" android:layout_height="match_parent" android:rowCount="3" android:rowOrderPreserved="true" android:columnCount="2" android:columnOrderPreserved="true" android:alignmentMode="alignBounds"/>

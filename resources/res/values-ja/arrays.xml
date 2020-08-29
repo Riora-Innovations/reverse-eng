@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="SensorType">
+        <item>受信機</item>
+        <item>電圧</item>
+        <item>温度</item>
+        <item>回転</item>
+        <item>高度</item>
+        <item>GPS</item>
+        <item>GPS軌跡</item>
+    </array>
+</resources>

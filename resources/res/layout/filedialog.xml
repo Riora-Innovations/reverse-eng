@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#0000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableLayout android:id="@+id/tb1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TableRow>
+            <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btnBack"/>
+            <TextView android:textSize="20sp" android:textColor="#fff" android:id="@+id/txtPath_fileDialog" android:background="#000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="TextView"/>
+        </TableRow>
+    </TableLayout>
+    <ListView android:id="@+id/lstDir_fileDialog" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp"/>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="adSize" format="string">
+    </attr>
+    <attr name="adSizes" format="string">
+    </attr>
+    <attr name="adUnitId" format="string">
+    </attr>
+    <attr name="mapType">
+        <enum name="none" value="0" />
+        <enum name="normal" value="1" />
+        <enum name="satellite" value="2" />
+        <enum name="terrain" value="3" />
+        <enum name="hybrid" value="4" />
+    </attr>
+    <attr name="cameraBearing" format="float">
+    </attr>
+    <attr name="cameraTargetLat" format="float">
+    </attr>
+    <attr name="cameraTargetLng" format="float">
+    </attr>
+    <attr name="cameraTilt" format="float">
+    </attr>
+    <attr name="cameraZoom" format="float">
+    </attr>
+    <attr name="uiCompass" format="boolean">
+    </attr>
+    <attr name="uiRotateGestures" format="boolean">
+    </attr>
+    <attr name="uiScrollGestures" format="boolean">
+    </attr>
+    <attr name="uiTiltGestures" format="boolean">
+    </attr>
+    <attr name="uiZoomControls" format="boolean">
+    </attr>
+    <attr name="uiZoomGestures" format="boolean">
+    </attr>
+    <attr name="useViewLifecycle" format="boolean">
+    </attr>
+    <attr name="zOrderOnTop" format="boolean">
+    </attr>
+    <attr name="orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="rowCount" format="integer">
+    </attr>
+    <attr name="columnCount" format="integer">
+    </attr>
+    <attr name="useDefaultMargins" format="boolean">
+    </attr>
+    <attr name="alignmentMode">
+        <enum name="alignBounds" value="0" />
+        <enum name="alignMargins" value="1" />
+    </attr>
+    <attr name="rowOrderPreserved" format="boolean">
+    </attr>
+    <attr name="columnOrderPreserved" format="boolean">
+    </attr>
+    <attr name="layout_row" format="integer">
+    </attr>
+    <attr name="layout_rowSpan" format="integer">
+        <item name="?0x1000001" value="1" />
+    </attr>
+    <attr name="layout_column" format="integer">
+    </attr>
+    <attr name="layout_columnSpan" format="integer">
+        <item name="?0x1000001" value="1" />
+    </attr>
+    <attr name="layout_gravity">
+        <flag name="top" value="30" />
+        <flag name="bottom" value="50" />
+        <flag name="left" value="3" />
+        <flag name="right" value="5" />
+        <flag name="center_vertical" value="10" />
+        <flag name="fill_vertical" value="70" />
+        <flag name="center_horizontal" value="1" />
+        <flag name="fill_horizontal" value="7" />
+        <flag name="center" value="11" />
+        <flag name="fill" value="77" />
+        <flag name="clip_vertical" value="80" />
+        <flag name="clip_horizontal" value="8" />
+        <flag name="start" value="800003" />
+        <flag name="end" value="800005" />
+    </attr>
+    <attr name="maxRPM" format="float">
+    </attr>
+    <attr name="rpm" format="float">
+    </attr>
+</resources>

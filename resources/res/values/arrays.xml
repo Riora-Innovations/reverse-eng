@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="SensorType">
+        <item>Receiver</item>
+        <item>Voltage</item>
+        <item>Temperature</item>
+        <item>RPM</item>
+        <item>Altitude</item>
+        <item>GPS</item>
+        <item>GPSLocus</item>
+    </array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <usb-device product-id="24577" vendor-id="1027"/>
+    <usb-device product-id="688" vendor-id="1118"/>
+    <usb-device product-id="24592" vendor-id="1027"/>
+    <usb-device product-id="8963" vendor-id="1659"/>
+    <usb-device product-id="3" vendor-id="4104"/>
+    <usb-device product-id="5" vendor-id="4104"/>
+</resources>

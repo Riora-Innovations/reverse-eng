@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_Write" android:orderInCategory="1" android:title="@string/write" android:showAsAction="always"/>
+    <item android:id="@+id/action_Stop" android:visible="false" android:orderInCategory="2" android:title="@string/stop" android:showAsAction="always"/>
+    <item android:icon="@drawable/rate0" android:id="@+id/action_Rate" android:orderInCategory="0" android:title="@string/action_Rate" android:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_addpage" android:orderInCategory="20" android:title="@string/add_page" android:showAsAction="never"/>
+    <item android:id="@+id/action_delpage" android:orderInCategory="30" android:title="@string/delete_page" android:showAsAction="never"/>
+</menu>

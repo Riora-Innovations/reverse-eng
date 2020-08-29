@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="600dp" android:minHeight="500dp">
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_Device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labDevice"/>
+                <Spinner android:textSize="20sp" android:id="@+id/spin_Device" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labTitle"/>
+                <EditText android:textSize="20sp" android:id="@+id/et_Title" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="Please enter the Senser Title！" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_Sensor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labSensor"/>
+                <Spinner android:textSize="20sp" android:entries="@array/SensorType" android:id="@+id/spin_Sensor" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_ValType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labType"/>
+                <Spinner android:textSize="20sp" android:id="@+id/spin_ValType" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_Type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labType"/>
+                <Spinner android:textSize="20sp" android:id="@+id/spin_Type" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_Unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labUnit"/>
+                <Spinner android:textSize="20sp" android:id="@+id/spin_Unit" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="24sp" android:id="@+id/tv_Slot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labSlot"/>
+                <Spinner android:textSize="24sp" android:id="@+id/spin_Slot" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <TableLayout android:id="@+id/tableLayout_ShowBattery" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <TextView android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labShowBattery"/>
+                    <CheckBox android:id="@+id/ckBox_ShowBattery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
+                </TableRow>
+                <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <TextView android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labShowExtBattery"/>
+                    <CheckBox android:id="@+id/ckBox_ShowExtBattery" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </TableRow>
+            </TableLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_Range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labRange1"/>
+                <EditText android:textSize="20sp" android:id="@+id/et_Range" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="Please enter the number！" android:numeric="decimal" android:layout_weight="1"/>
+                <TextView android:textSize="20sp" android:id="@+id/tv_Range2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_AltitudeUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labAltitudeUnit"/>
+                <Spinner android:textSize="20sp" android:id="@+id/spin_AltitudeUnit" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_VariometerUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labVariometerUnit"/>
+                <Spinner android:textSize="20sp" android:id="@+id/spin_VariometerUnit" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_SpeedUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labSpeedUnit"/>
+                <Spinner android:textSize="20sp" android:id="@+id/spin_SpeedUnit" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_MaxValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labMaxValue"/>
+                <EditText android:textSize="20sp" android:id="@+id/et_MaxValue" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="Please enter the number！" android:numeric="integer" android:layout_weight="1"/>
+                <Spinner android:textSize="20sp" android:id="@+id/spin_MaxValue" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textSize="20sp" android:id="@+id/tv_RpmMax2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labRPMBasicUnit"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/layout_AlertEnable" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_AlertEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labAlertEnable"/>
+                <ToggleButton android:id="@+id/tBtn_AlertEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="ON" android:textOff="OFF"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_AlertMax" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labAlertMax"/>
+                <EditText android:textSize="20sp" android:id="@+id/et_AlertMax" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Please enter the number！" android:layout_weight="1" android:inputType="none|number|numberSigned|numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_AlertMin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labAlertMin"/>
+                <EditText android:textSize="20sp" android:id="@+id/et_AlertMin" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="Please enter the number！" android:layout_weight="1" android:inputType="none|number|numberSigned|numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/layout_MaxValue2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_MaxValue2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labExtMaxValue"/>
+                <EditText android:textSize="20sp" android:id="@+id/et_MaxValue2" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="Please enter the number！" android:numeric="integer" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/layout_Alert2Enable" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_Alert2Enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labExtAlertEnable"/>
+                <ToggleButton android:id="@+id/tBtn_Alert2Enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="ON" android:textOff="OFF"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/layout_Alert2Max" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_Alert2Max" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labExtAlertMax"/>
+                <EditText android:textSize="20sp" android:id="@+id/et_Alert2Max" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Please enter the number！" android:layout_weight="1" android:inputType="none|number|numberSigned|numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/layout_Alert2Min" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:id="@+id/tv_Alert2Min" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labExtAlertMin"/>
+                <EditText android:textSize="20sp" android:id="@+id/et_Alert2Min" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="Please enter the number！" android:layout_weight="1" android:inputType="none|number|numberSigned|numberDecimal"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="20sp" android:id="@+id/btn_OK" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btnConfirm" android:layout_weight="1"/>
+        <Button android:textSize="20sp" android:id="@+id/btn_Cancel" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

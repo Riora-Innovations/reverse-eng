@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@color/cyan" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="1sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" "/>
+    </LinearLayout>
+    <TableRow android:id="@+id/trTitle" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/lblSettingData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lablogData"/>
+        <TextView android:textSize="20sp" android:id="@+id/lblDataName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    </TableRow>
+    <LinearLayout android:id="@+id/layoutTitle" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:id="@+id/tv_Sensor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/labSensor2"/>
+        <Spinner android:textSize="30sp" android:textColor="@color/white" android:id="@+id/spin_Sensor" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <RadioGroup android:orientation="horizontal" android:id="@+id/optGroup" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/optValue1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:checked="true" android:text="@string/radioBtnAltitude"/>
+        <RadioButton android:id="@+id/optValue2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="@string/radioBtnVariometer"/>
+        <RadioButton android:id="@+id/optValue3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="@string/radioBtnPressure"/>
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical" android:id="@+id/chart" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:id="@+id/layout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/white" android:id="@+id/txtLegend1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text=""/>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/white" android:id="@+id/txtLegend2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text=""/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ZoomButton android:id="@+id/zoomIn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zoom_in" android:minWidth="64dp"/>
+            <ZoomButton android:id="@+id/zoomOut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zoom_out" android:minWidth="64dp"/>
+            <ZoomButton android:id="@+id/zoomReset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zoom_reset" android:minWidth="64dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <SeekBar android:id="@+id/seekBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="20sp" android:textColor="@color/white" android:id="@+id/txtServoValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/0"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btnOpen" android:background="@drawable/btnColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:minHeight="40dp" android:text="@string/btnOpen" android:layout_weight="1" android:onClick="btnOpenLogClick"/>
+        <Button android:id="@+id/btnClear" android:background="@drawable/btnColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:minHeight="40dp" android:text="@string/btnClear" android:layout_weight="1" android:onClick="btnClearClick"/>
+    </LinearLayout>
+</LinearLayout>

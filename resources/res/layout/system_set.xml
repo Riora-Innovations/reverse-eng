@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RadioGroup android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/radioGroup1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <RadioButton android:textSize="25sp" android:id="@+id/radioBtn_system1" android:layout_width="match_parent" android:layout_height="47dp" android:checked="true" android:text="@string/fasstest"/>
+        <RadioButton android:textSize="25sp" android:id="@+id/radioBtn_system2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/t_fhss"/>
+    </RadioGroup>
+    <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <Button android:textSize="25sp" android:id="@+id/btnEnter" android:background="#ff8f19" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/set" android:layout_weight="1" android:onClick="btnEnterClick" style="?android:attr/buttonBarButtonStyle"/>
+        <Button android:textSize="25sp" android:id="@+id/btnCancel" android:background="#ff8f19" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/cancel" android:layout_weight="1" android:onClick="btnCancelClick" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

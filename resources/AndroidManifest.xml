@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="61" android:versionName="V1.5.5" package="com.futaba.androidmadlink">
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="18"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> 　　\10
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:allowBackup="true" android:hardwareAccelerated="true">
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDRwOsTECVqMv_N2BBtWVzxCGfXuNcH9p8"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:label="@string/app_name" android:name="com.futaba.androidmadlink.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter"/>
+        </activity>
+        <activity android:name="GaugeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="LogActivity" android:screenOrientation="portrait"/>
+        <activity android:name="MapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".map.Showpath" android:screenOrientation="portrait"/>
+        <activity android:name="SystemSetActivity" android:screenOrientation="portrait"/>
+        <activity android:name="GPSLocusActivity" android:screenOrientation="portrait"/>
+        <service android:name=".service.ViewDataService"/>
+        <activity android:name="SettingActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

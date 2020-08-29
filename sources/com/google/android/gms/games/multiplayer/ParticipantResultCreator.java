@@ -1,0 +1,57 @@
+package com.google.android.gms.games.multiplayer;
+
+import android.os.Parcel;
+import android.os.Parcelable.Creator;
+import com.google.android.gms.common.internal.safeparcel.C0324a;
+import com.google.android.gms.common.internal.safeparcel.C0324a.C0325a;
+import com.google.android.gms.common.internal.safeparcel.C0326b;
+
+public class ParticipantResultCreator implements Creator<ParticipantResult> {
+    public static final int CONTENT_DESCRIPTION = 0;
+
+    /* renamed from: a */
+    static void m1080a(ParticipantResult participantResult, Parcel parcel, int i) {
+        int p = C0326b.m621p(parcel);
+        C0326b.m609a(parcel, 1, participantResult.getParticipantId(), false);
+        C0326b.m619c(parcel, 1000, participantResult.getVersionCode());
+        C0326b.m619c(parcel, 2, participantResult.getResult());
+        C0326b.m619c(parcel, 3, participantResult.getPlacing());
+        C0326b.m599D(parcel, p);
+    }
+
+    public ParticipantResult createFromParcel(Parcel parcel) {
+        int i = 0;
+        int o = C0324a.m584o(parcel);
+        String str = null;
+        int i2 = 0;
+        int i3 = 0;
+        while (parcel.dataPosition() < o) {
+            int n = C0324a.m582n(parcel);
+            switch (C0324a.m562S(n)) {
+                case 1:
+                    str = C0324a.m581m(parcel, n);
+                    break;
+                case 2:
+                    i2 = C0324a.m575g(parcel, n);
+                    break;
+                case 3:
+                    i = C0324a.m575g(parcel, n);
+                    break;
+                case 1000:
+                    i3 = C0324a.m575g(parcel, n);
+                    break;
+                default:
+                    C0324a.m568b(parcel, n);
+                    break;
+            }
+        }
+        if (parcel.dataPosition() == o) {
+            return new ParticipantResult(i3, str, i2, i);
+        }
+        throw new C0325a("Overread allowed size end=" + o, parcel);
+    }
+
+    public ParticipantResult[] newArray(int size) {
+        return new ParticipantResult[size];
+    }
+}

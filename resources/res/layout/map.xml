@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/linearLayout1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/lblSettingData" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/lblBusy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/busy"/>
+        <ImageView android:id="@+id/imgBusy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/idle" android:contentDescription="@string/busy"/>
+    </LinearLayout>
+    <HorizontalScrollView android:id="@+id/hscr1" android:scrollbars="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/myButton1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Start"/>
+            <Button android:id="@+id/myButton2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="End"/>
+            <Button android:id="@+id/myButton3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Path Log"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView android:id="@+id/showgeo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <fragment android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" class="com.google.android.gms.maps.SupportMapFragment"/>
+</LinearLayout>
